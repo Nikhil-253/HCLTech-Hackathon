@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Slot Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Request Parking Slot</h2>
+
+        <!-- User ID Input -->
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" placeholder="Enter your User ID">
+
+        <!-- Weekday Slot Selection -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Slots Requested</th>
+                    <th>Availability</th>
+                    <th>Action</th> <!-- New Column -->
+                </tr>
+            </thead>
+            <tbody id="slotsTable">
+                <!-- Days and availability will be added dynamically by JavaScript -->
+            </tbody>
+        </table>
+
+        <button onclick="submitRequest()">Submit Request</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
